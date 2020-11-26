@@ -1,0 +1,74 @@
+[{
+    "id": 1,
+    "recipe": {
+        "dishName": "Butternut Squash \"Mac & Cheese\"",
+        "ingredients": [
+            "12 oz of Butter Squash",
+            "1/2 cup of Walnuts",
+            "1 tsp of of Onion Powder",
+            "1/3 cup of Basil Leaves",
+            "1/2 cup of Hemp Milk or Spring Water",
+            "1/2 tsp or to taste of Sea Salt",
+            "1/2 cup of Kamut Pasta Noodles",
+            "Cayenne Pepper for garnish (optional)"
+        ],
+        "directions": "Peel and chop your butternut squash. Then place the squash chunks in a small pot and cover with water. Bring to a boil and cook until a fork pieces through easily. This should take around 8-10 minutes. Drain the squash and place it in your blender with all the above mentioned ingredients. Blend your sauce until smooth and creamy.",
+        "picture": "butternut_mac.JPG"
+    }
+},
+{
+    "id": 2,
+    "recipe": {
+        "dishName": "Sunday Smoothie",
+        "ingredients": [
+            "Blueberries",
+            "Blackberries",
+            "Hempseeds",
+            "Dates",
+            "Seamoss",
+            "Mangos",
+            "Spring Water"
+        ],
+        "directions": "Blend all the ingredients in your favorite blender and enjoy!",
+        "picture": "sunday_smoothie.JPG"
+    }
+},
+{
+    "id": 3,
+    "recipe": {
+        "dishName": "All in Veggie Soup",
+        "ingredients": [
+            "Squash",
+            "Red Onion",
+            "White Onion",
+            "Roma Tomatoes",
+            "Yellow Pepper",
+            "Green Peppers",
+            "Sea Salt",
+            "Thyme",
+            "Sage",
+            "Avocado Oil",
+            "Chickpeas (garnish)",
+            "Red Pepper Flakes (garnish)"
+        ],
+        "directions": "Roast squash in the oven at 475 degrees Fahrenheit, red onion, white onion, roma tomatoes, yellow peppers, and green peppers (drizzle the veggies with avocado oil and season with sea salt). Once cooked add the veggies, and Dr. Sebi approved seasoning into a blender. Transfer the mixture into a saucepan and heat up. Serve and Garnish with Roasted Chickpeas, and hot pepper flakes.",
+        "picture": "all_in_veg_soup.JPG"
+    }
+},
+{
+    "id": 4,
+    "recipe": {
+        "dishName": "Simple Breakfast",
+        "ingredients": [
+            "Figs",
+            "Dates",
+            "Kamut Puffs",
+            "Blackberries",
+            "Brazilian Nuts",
+            "Sesame Seeds",
+            "Agave"
+        ],
+        "directions": "Have a Wonderful Day!",
+        "picture": "simple_breakfast.jpg"
+    }
+}]
