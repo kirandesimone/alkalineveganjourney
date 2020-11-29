@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from "react-router-dom"
 import { makeStyles } from '@material-ui/core/styles'
 import clsx from 'clsx'
 import Card from '@material-ui/core/Card'
@@ -12,7 +13,6 @@ import Typography from '@material-ui/core/Typography'
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore'
 import IconButton from '@material-ui/core/IconButton'
 import theme from '../theme'
-import pic from '../Assets/sunday_smoothie.JPG'
 
 
 
@@ -60,16 +60,18 @@ export default function RecipeCards(props) {
         <Card key={id} className={classes.card}>
             <CardHeader title={dishName}/>
             <CardActionArea>
-                <CardMedia 
-                image={require(`../Assets/${picture}`)} 
-                title={dishName}
-                className={classes.media}
-                />
-                <CardContent>
-                    <Typography variant="body2" component="p">
-                        {directions}
-                    </Typography>
-                </CardContent>
+                <Link to={"/recipe/" + id} style={{textDecoration: "none", color: "black"}}>
+                    <CardMedia 
+                    image={require(`../Assets/${picture}`)} 
+                    title={dishName}
+                    className={classes.media}
+                    />
+                    <CardContent>
+                        <Typography variant="body2" component="p">
+                            {directions}
+                        </Typography>
+                    </CardContent>
+                </Link>
             </CardActionArea>
             <CardActions disableSpacing>
                 <IconButton className={clsx(classes.expand, {
@@ -84,12 +86,12 @@ export default function RecipeCards(props) {
             </CardActions>
             <Collapse in={expanded} timeout="auto" unmountOnExit>
                 <CardContent>
-                    <Typography variant="h5">
-                        Ingredients
+                    <Typography variant="h5" style={{paddingBottom: "2%"}}>
+                        Ingredients:
                     </Typography>
                     {ingredients.map(ingredient => 
-                        <Typography variant="body2" component="p">
-                            {ingredient}
+                        <Typography key={ingredient} variant="body2" component="p">
+                            - {ingredient}
                         </Typography>
                     )}
                 </CardContent>
