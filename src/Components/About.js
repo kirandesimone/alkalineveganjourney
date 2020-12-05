@@ -8,7 +8,7 @@ import aboutPic from '../Assets/rsz_about.jpg'
 const useStyles = makeStyles({
     about: {
         backgroundColor: theme.palette.primary.dark,
-        paddingTop: "5%",
+        paddingTop: "10%",
         paddingBottom: "5%",
         display: "flex"
     },

@@ -7,9 +7,12 @@ import { SiInstagram } from 'react-icons/si'
 
 const useStyles = makeStyles({
     root: {
+        position: "fixed",
+        width: "100%",
         display: "flex",
         overflow: "hidden",
-        backgroundColor: theme.palette.primary.dark
+        backgroundColor: theme.palette.primary.dark,
+        zIndex: 10
         
     },
     logo: {
@@ -34,12 +37,13 @@ const useStyles = makeStyles({
         color: theme.palette.primary.light,
         fontFamily: theme.typography.fontFamily,
         fontSize: "1.2rem"
-    }
+    },
 });
 
 
 export default function Navbar() {
     const classes = useStyles();
+
     return (
         <div>
             <nav className={classes.root}>
