@@ -13,7 +13,8 @@
             "Cayenne Pepper for garnish (optional)"
         ],
         "directions": "Peel and chop your butternut squash. Then place the squash chunks in a small pot and cover with water. Bring to a boil and cook until a fork pieces through easily. This should take around 8-10 minutes. Drain the squash and place it in your blender with all the above mentioned ingredients. Blend your sauce until smooth and creamy.",
-        "picture": "rsz_butternut_mac.jpg"
+        "picture": "rsz_butternut_mac.jpg",
+        "mbl_pic": "mbl_butternut_mac.jpg"
     }
 },
 {
@@ -30,7 +31,8 @@
             "Spring Water"
         ],
         "directions": "Blend all the ingredients in your favorite blender and enjoy!",
-        "picture": "rsz_sunday_smoothie.jpg"
+        "picture": "rsz_sunday_smoothie.jpg",
+        "mbl_pic": "mbl_sunday_smoothie.jpg"
     }
 },
 {
@@ -52,7 +54,8 @@
             "Red Pepper Flakes (garnish)"
         ],
         "directions": "Roast squash in the oven at 475 degrees Fahrenheit, red onion, white onion, roma tomatoes, yellow peppers, and green peppers (drizzle the veggies with avocado oil and season with sea salt). Once cooked add the veggies, and Dr. Sebi approved seasoning into a blender. Transfer the mixture into a saucepan and heat up. Serve and Garnish with Roasted Chickpeas, and hot pepper flakes.",
-        "picture": "rsz_all_in_veg_soup.jpg"
+        "picture": "rsz_all_in_veg_soup.jpg",
+        "mbl_pic": "mbl_all_in.jpg"
     }
 },
 {
@@ -69,6 +72,7 @@
             "Agave"
         ],
         "directions": "Have a Wonderful Day!",
-        "picture": "rsz_simple_breakfast.jpg"
+        "picture": "rsz_simple_breakfast.jpg",
+        "mbl_pic": "mbl_simple_breakfast.jpg"
     }
 }]
