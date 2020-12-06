@@ -21,7 +21,7 @@ const useStyles = makeStyles({
         paddingBottom: "10%",
     },
     dish: {
-        paddingTop: "2%",
+        paddingTop: "10%",
         paddingLeft: "5%"
     },
     mblDish: {
@@ -39,7 +39,7 @@ const useStyles = makeStyles({
         paddingTop: "5%",
     },
     content: {
-        paddingTop: "7%",
+        paddingTop: "15%",
         paddingLeft: "10%",
         maxWidth: 700
     },
@@ -88,7 +88,7 @@ export default function Recipe() {
                         Ingredients:
                     </Typography>
                     { recipe.recipe.ingredients.map(item => 
-                        <Typography variant="body1">
+                        <Typography key={recipe.recipe.ingredients.indexOf(item)} variant="body1">
                             - { item }
                         </Typography>
                     )}
