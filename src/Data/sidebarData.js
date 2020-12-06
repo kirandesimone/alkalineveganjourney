@@ -1,32 +1,25 @@
 import React from 'react'
-import * as FaIcons from 'react-icons/fa'
-import * as AiIcons from 'react-icons/ai'
-import * as IoIcons from 'react-icons/io'
-
+import { AiFillHome } from 'react-icons/ai'
+import { IoMdHelpCircle } from 'react-icons/io'
+import { CgNotes } from 'react-icons/cg'
 
 export const SidebarData = [
   {
     title: 'Home',
     path: '/',
-    icon: <AiIcons.AiFillHome />,
+    icon: <AiFillHome />,
     cName: 'nav-text'
   },
   {
     title: 'About',
     path: '/about',
-    icon: <IoIcons.IoMdHelpCircle />,
+    icon: <IoMdHelpCircle />,
     cName: 'nav-text'
   },
   {
     title: 'Recipes',
     path: '/recipes',
-    icon: <IoIcons.IoMdPeople />,
-    cName: 'nav-text'
-  },
-  {
-    title: 'Classes',
-    path: '/classes',
-    icon: <FaIcons.FaOdnoklassniki />,
+    icon: <CgNotes />,
     cName: 'nav-text'
   },
  

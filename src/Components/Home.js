@@ -34,17 +34,29 @@ const useStyles = makeStyles({
         paddingTop: "7%",
         paddingBottom: "5%"
     },
-    recipeTitle: {
+    recipeTitleWrap: {
         marginLeft: "42%",
-        paddingBottom: "15%"
+        paddingBottom: "10%"
     },
-    mblRecipeTitle: {
-        marginLeft: "27%",
-        paddingBottom: "5%"
+    mblRecipeTitleWrap: {
+        marginLeft: "20%",
+        paddingBottom: "5%",
+    },
+    favRecipeTitle: {
+        fontFamily: theme.typography.fontFamily,
+    },
+    mblFavRecipeTitle: {
+        fontFamily: theme.typography.fontFamily,
+        fontSize: "2rem"
     },
     favRecipeContent: {
         marginLeft: "15%",
         paddingTop: "5%"
+    },
+    mblFavRecipeContent: {
+        marginLeft: "7%",
+        paddingTop: "5%",
+        paddingBottom: "5%"
     },
     favRecipePic: {
         marginLeft: "22%",
@@ -53,14 +65,34 @@ const useStyles = makeStyles({
     mblFavRecipePic: {
         marginLeft: "3%"
     },
-    sebiTitle: {
+    sebiTitleWrap: {
         marginLeft: "40%",
+        paddingBottom: "5%"
+    },
+    mblSebiTitleWrap: {
+        marginLeft: "15%",
+        paddingBottom: "10%"
+    },
+    sebiTitle: {
+        fontFamily: theme.typography.fontFamily
+    },
+    mblSebititle: {
+        fontFamily: theme.typography.fontFamily,
+        fontSize: "2rem"
+    },
+    foodListWrap: {
+        marginLeft: "33.5%", 
+        paddingBottom: "5%"
+    },
+    mblFoodListWrap: {
+        marginLeft: "2%",
         paddingBottom: "5%"
     },
     mblWrapper: {
         zIndex: 5,
         paddingLeft: "3%"
-    }
+    },
+    
     
     
 })
@@ -92,15 +124,15 @@ export default function Home() {
                 </div>
             </section>
             <section className={classes.recipes}>
-                <div className={matches ? classes.mblRecipeTitle : classes.recipeTitle}>
-                    <Typography variant="h3" style={{fontFamily: theme.typography.fontFamily}}>
+                <div className={matches ? classes.mblRecipeTitleWrap : classes.recipeTitleWrap}>
+                    <Typography variant="h3" className={matches ? classes.mblFavRecipeTitle : classes.favRecipeTitle}>
                         Featured Recipe
                     </Typography>
                 </div>
                 <div style={matches ? 
                     {display: "flex", flexDirection: 'column'} : { display: 'flex'}
                     }>
-                    <div className={classes.favRecipeContent}>
+                    <div className={matches ? classes.mblFavRecipeContent : classes.favRecipeContent}>
                         <Typography variant="h4" style={{fontFamily: theme.typography.fontFamily}}>
                             All in Vegetable Soup
                         </Typography>
@@ -115,12 +147,12 @@ export default function Home() {
             </section>
             <section style={{paddingTop: "5%"}}>
                 <div>
-                    <div className={classes.sebiTitle}>
-                        <Typography variant="h3" style={{fontFamily: theme.typography.fontFamily}}>
+                    <div className={matches ? classes.mblSebiTitleWrap : classes.sebiTitleWrap}>
+                        <Typography variant="h3" className={matches ? classes.mblSebititle : classes.sebiTitle}>
                             Dr. Sebi Approved
                         </Typography>
                     </div>
-                    <div style={{marginLeft: "33.5%", paddingBottom: "5%"}}>
+                    <div className={matches ? classes.mblFoodListWrap : classes.foodListWrap}>
                         <Image
                             style={{width: 640, height: "auto"}}
                             zoomed={zoomed}
